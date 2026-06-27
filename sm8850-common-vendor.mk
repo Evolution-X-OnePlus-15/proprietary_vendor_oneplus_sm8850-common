@@ -162,6 +162,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2_vendor.xml \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku2.xml \
