@@ -1,0 +1,76 @@
+{
+    "INCLUDE_EXPIRATION_EXTENSION": 1,
+    "cbor_extension": "ojoAAVfFoRkEXvU6AAFXxIIBAA==",
+    "chipset_labels": [
+        "SM8850 - KAANAPALI (0xA01B)"
+    ],
+    "chipset_names": [
+        "SM8850 - KAANAPALI"
+    ],
+    "deviceFileName": "1118-1118-no-exp-3707446418.pfm",
+    "featureBundles": [],
+    "featureRanges": [],
+    "features": [
+        "Smart Transmit"
+    ],
+    "filename": "platform_EC_SM8850 - KAANAPALI_license_17a550d2-1636-43d5-8fd4-b02188b57fcc",
+    "graceCount": 0,
+    "gracePeriod": 0,
+    "licenseCategory": "CHIPSET_OEM",
+    "licenseFeaturesIds": [
+        "1118"
+    ],
+    "licenseHardwareVersions": [
+        "0xA01B"
+    ],
+    "licenseOEMIDs": 51,
+    "licensePKHashes": [
+        "0x31313ec6f0c237b69004d153b2ec2d3ddf1d826d0f60a952d039d5ded862ab0e515e4819d1844fdc91242304c685f202"
+    ],
+    "licenseType": "PRODUCTION",
+    "licenseeName": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
+    "requestMetadata": {
+        "bindToOem": true,
+        "customer": "Guangdong OPPO Mobile Telecommunications Corp., Ltd."
+    },
+    "signature_type": "EC"
+}
+
+-----BEGIN CERTIFICATE-----
+MIIDOjCCAr+gAwIBAgIUe3hS6IF4xfiU3blsAAABlzZSacYwCgYIKoZIzj0EAwMw
+dTEkMCIGA1UECgwbUXVhbGNvbW0gVGVjaG5vbG9naWVzLCBJbmMuMSowKAYDVQQL
+DCFRdWFsY29tbSBDcnlwdG9ncmFwaGljIE9wZXJhdGlvbnMxITAfBgNVBAMMGENI
+TFNFIEVDRFNBIFNpZ25pbmcgQ2VydDAgFw03MDAxMDEwMDAwMDFaGA85OTk5MTIz
+MTIzNTk1OVowgZExPTA7BgNVBAMMNEd1YW5nZG9uZyBPUFBPIE1vYmlsZSBUZWxl
+Y29tbXVuaWNhdGlvbnMgQ29ycC4sIEx0ZC4xJDAiBgNVBAoMG1F1YWxjb21tIFRl
+Y2hub2xvZ2llcywgSW5jLjEqMCgGA1UECwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhp
+YyBPcGVyYXRpb25zMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEu0Tgh2UMgd+Bti37
+w7unapPSX9D7pz51O3wslqS47uhp0mpL0rKB77FmYaVwLQr6INJ6BFZ5oyBKnxt/
+MirQgiCPnwK59CudYjdKv/l4tNBWiUksXhkwlR88Ipgy+kT/o4HwMIHtMB8GA1Ud
+IwQYMBaAFPLNheSH5hmLSIDam3tx5tRxnbazMAwGA1UdEwEB/wQCMAAwDgYDVR0P
+AQH/BAQDAgWgMBUGCSsGAQQBiykMAQQIAAAAAAAABF4wFgYKKwYBBAGLKQsBAQQI
+AAAAAAAAAFEwHwYIKwYBBAGLKQ0EE6I6AAFXxaEZBF71OgABV8SCAQAwFgYKKwYB
+BAGLKQsBAgQIAAAAAAAAoBswLQYJKwYBBAGLKQwFBCAxMT7G8MI3tpAE0VOy7C09
+3x2CbQ9gqVLQOdXe2GKrDjAVBgkrBgEEAYspDAkECAAAAABoPw70MAoGCCqGSM49
+BAMDA2kAMGYCMQDlwcG3SKwpl9gbl9sLeaOtibESQWLUF0ymC2O6P9+ISWxVLnSg
+DSvfwwdYV0a6BQ0CMQCnT8NVxdhaQ5pVK0omkA98ryvYl10ELaDt87wp9MZcSjv/
+ExkaHItCqMxI3veg1q0=
+-----END CERTIFICATE-----
+
+-----BEGIN CERTIFICATE-----
+MIICwDCCAiKgAwIBAgIUHY00Cltdn5I9n85x6zYrFnZBRCcwCgYIKoZIzj0EAwQw
+gYExJDAiBgNVBAoMG1F1YWxjb21tIFRlY2hub2xvZ2llcywgSW5jLjEqMCgGA1UE
+CwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhpYyBPcGVyYXRpb25zMS0wKwYDVQQDDCRR
+dWFsY29tbSBXRVMgRmVhdHVyZSBMaWNlbnNlIFJvb3QgdjIwHhcNMjMwOTIxMjIy
+OTQ0WhcNMzMwOTIwMjIyOTQ0WjB1MSQwIgYDVQQKDBtRdWFsY29tbSBUZWNobm9s
+b2dpZXMsIEluYy4xKjAoBgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMgT3Bl
+cmF0aW9uczEhMB8GA1UEAwwYQ0hMU0UgRUNEU0EgU2lnbmluZyBDZXJ0MHYwEAYH
+KoZIzj0CAQYFK4EEACIDYgAEb888xUry5SG55W8OqKYIujscfCpa1lQ07Yu96G5l
+NB2RS17VlNDAdlwHLJ74qgmPoSQ+0UbFskw4efRdDApSaeGADylYkGCAc2oRm0cV
+EW8LEMEzSA4vDqEbKajtRbV1o2YwZDASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1Ud
+DwEB/wQEAwIChDAdBgNVHQ4EFgQU8s2F5IfmGYtIgNqbe3Hm1HGdtrMwHwYDVR0j
+BBgwFoAU79NZnP7XCZhPg0dtgD2UD49GcrswCgYIKoZIzj0EAwQDgYsAMIGHAkIB
+ugvGTXa23TedjAC60XVKUdJmreRHPERtvD0at63y/VuILZh0PpagDLryhVZkhfCA
+lmeJMhXizNsp6sJW3FncNRoCQQV5qzX5OsVW7O1ERapcYQ1UhxEfoJACMny9ilh9
+R0aV5+aQzJZO0qjint390aZ9MqqrNz7G/x0PfSH9yZXmtbvx
+-----END CERTIFICATE-----
