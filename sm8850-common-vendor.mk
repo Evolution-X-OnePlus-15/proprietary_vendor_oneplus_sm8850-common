@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8850-common
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/hw/init.oplus.wifi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.wifi.rc \
@@ -17,6 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V10-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
+    vendor/oneplus/sm8850-common/proprietary/product/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
@@ -233,7 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/chre_dynamic_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/kaanapali_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_bu52053nvx_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/kaanapali_ccd_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_ccd_base.json \
@@ -565,6 +564,7 @@ PRODUCT_PACKAGES += \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
+    libmodem_device_ids \
     libnspextensioncopyservice \
     libnspextensionfrcservice \
     libnspextensiongenericqnnservice \
@@ -945,6 +945,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     com.google.android.widevine.nonupdatable \
     TimeService \
+    ConsumerIRApp \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     QCC \
@@ -1006,6 +1007,7 @@ PRODUCT_PACKAGES += \
     manifest_touch_aidl.xml \
     vintf_manifext_aidl_panelchaplin.xml \
     C2PAInternetService \
+    KmInstallKeybox \
     adsprpcd \
     audioadsprpcd \
     cdsprpcd \
@@ -1618,7 +1620,6 @@ PRODUCT_PACKAGES += \
     init.qcrild \
     ipacm \
     ipacm-diag \
-    KmInstallKeybox \
     ks \
     loc_launcher \
     lowi-server \
