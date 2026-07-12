@@ -1054,7 +1054,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-canoe_5_2 \
     init.kernel.post_boot-canoe_6_1 \
     init.kernel.post_boot-canoe_default_6_2 \
-    init.kernel.post_boot-memory \
     init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.sensors \
