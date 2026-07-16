@@ -14,9 +14,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V10-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
@@ -163,6 +164,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2_vendor.xml \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3.xml \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1_vendor.xml \
@@ -769,6 +772,7 @@ PRODUCT_PACKAGES += \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
+    libvmmem \
     libvppclient \
     libvppcommon \
     libvpphvx \
@@ -943,6 +947,7 @@ PRODUCT_PACKAGES += \
     libstc_color_feature \
     vendor.oplus.hardware.cwb-V2-ndk \
     vendor.oplus.hardware.display.MixLut3D-V1-ndk \
+    vendor.oplus.hardware.display.MixLut3D-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     com.google.android.widevine.nonupdatable \
     TimeService \
@@ -1116,7 +1121,7 @@ PRODUCT_PACKAGES += \
     gauged \
     ufcsd \
     vendor-oplus-hardware-touch-V2-hbp5-service \
-    vendor.oplus.hardware.charger-V10-service \
+    vendor.oplus.hardware.charger-V11-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     wlschgd \
     init.oplus.wifi \

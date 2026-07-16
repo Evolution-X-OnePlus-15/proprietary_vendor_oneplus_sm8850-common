@@ -12528,6 +12528,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvmmem",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvmmem.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvppclient",
     owner: "oneplus",
     strip: {
@@ -16881,6 +16907,24 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/libGaiaClient_vnd.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.olc2-V3-ndk",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/libGaiaClient_vnd.so",
@@ -16900,7 +16944,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "both",
     prefer: true,
     device_specific: true,
 }
@@ -16924,7 +16968,7 @@ cc_prebuilt_library_shared {
                 "libutilscallstack",
                 "libbinder_ndk",
                 "libqservice",
-                "vendor.oplus.hardware.display.MixLut3D-V1-ndk",
+                "vendor.oplus.hardware.display.MixLut3D-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17563,6 +17607,31 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.display.MixLut3D-V2-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.display.MixLut3D-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -21048,12 +21117,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.oplus.hardware.charger-V10-service",
+    name: "vendor.oplus.hardware.charger-V11-service",
     owner: "oneplus",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V10-service",
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V11-service",
             ],
             shared_libs: [
                 "libcutils",
@@ -21067,7 +21136,7 @@ cc_prebuilt_binary {
                 "android.hardware.sensors@1.0",
                 "libsensorndkbridge",
                 "libm",
-                "vendor.oplus.hardware.charger-V10-ndk",
+                "vendor.oplus.hardware.charger-V11-ndk",
                 "vendor.oplus.hardware.osense.client-V1-ndk",
                 "libosenseaidlhalclient",
                 "libjsoncpp",
