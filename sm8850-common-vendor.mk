@@ -810,6 +810,7 @@ PRODUCT_PACKAGES += \
     sva_plugin \
     vendor.oplus.hardware.cwb-V2-ndk_vendor \
     vendor.oplus.hardware.cwb@1.0 \
+    vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \

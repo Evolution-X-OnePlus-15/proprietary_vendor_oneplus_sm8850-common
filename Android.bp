@@ -7358,8 +7358,8 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libbase",
                 "libbinder_ndk",
-                "vendor.pixelworks.hardware.feature@1.0_vendor",
-                "vendor.pixelworks.hardware.feature@1.1_vendor",
+                "vendor.pixelworks.hardware.feature@1.0",
+                "vendor.pixelworks.hardware.feature@1.1",
                 "vendor.pixelworks.hardware.feature@1.2",
                 "libc++",
                 "libc",
@@ -7393,9 +7393,9 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "vendor.pixelworks.hardware.display@1.0_vendor",
-                "vendor.pixelworks.hardware.display@1.1_vendor",
-                "vendor.pixelworks.hardware.display@1.2_vendor",
+                "vendor.pixelworks.hardware.display@1.0",
+                "vendor.pixelworks.hardware.display@1.1",
+                "vendor.pixelworks.hardware.display@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -7423,7 +7423,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libpwirisfeature_vendor",
+                "libpwirisfeature",
                 "libbase",
                 "libbinder_ndk",
                 "android.hardware.graphics.common-V7-ndk",
@@ -10081,7 +10081,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdedrm.so",
             ],
             shared_libs: [
-                "libpwirisfeature_vendor",
+                "libpwirisfeature",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -10232,7 +10232,7 @@ cc_prebuilt_library_shared {
                 "libpwirishardware_ext",
                 "vendor.pixelworks.hardware.display-V3-ndk",
                 "libpwirishalwrapper",
-                "libpwirisfeature_vendor",
+                "libpwirisfeature",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -10250,7 +10250,7 @@ cc_prebuilt_library_shared {
                 "libhwcsensor",
                 "android.frameworks.sensorservice-V1-ndk",
                 "libsensorndkbridge",
-                "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
+                "vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor",
                 "libbinder",
                 "libbinder_ndk",
                 "libdtlm",
@@ -10280,7 +10280,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbase",
-                "libpwirisfeature_vendor",
+                "libpwirisfeature",
                 "libpwirishal",
                 "liblog",
                 "libcutils",
@@ -10320,7 +10320,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdmdal.so",
             ],
             shared_libs: [
-                "libpwirisfeature_vendor",
+                "libpwirisfeature",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -13702,6 +13702,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor",
+    stem: "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.pixelworks.hardware.display-V3-ndk",
     owner: "oneplus",
     strip: {
@@ -13766,7 +13792,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so",
             ],
             shared_libs: [
-                "vendor.pixelworks.hardware.display@1.0_vendor",
+                "vendor.pixelworks.hardware.display@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -13795,8 +13821,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.2.so",
             ],
             shared_libs: [
-                "vendor.pixelworks.hardware.display@1.0_vendor",
-                "vendor.pixelworks.hardware.display@1.1_vendor",
+                "vendor.pixelworks.hardware.display@1.0",
+                "vendor.pixelworks.hardware.display@1.1",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -13878,7 +13904,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so",
             ],
             shared_libs: [
-                "vendor.pixelworks.hardware.feature@1.0_vendor",
+                "vendor.pixelworks.hardware.feature@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -13907,8 +13933,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.pixelworks.hardware.feature@1.2.so",
             ],
             shared_libs: [
-                "vendor.pixelworks.hardware.feature@1.0_vendor",
-                "vendor.pixelworks.hardware.feature@1.1_vendor",
+                "vendor.pixelworks.hardware.feature@1.0",
+                "vendor.pixelworks.hardware.feature@1.1",
                 "libhidlbase",
                 "liblog",
                 "libutils",
