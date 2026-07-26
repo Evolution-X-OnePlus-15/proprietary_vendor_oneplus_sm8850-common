@@ -16,8 +16,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.urcc-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.urcc-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
     vendor/oneplus/sm8850-common/proprietary/product/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
@@ -809,7 +810,6 @@ PRODUCT_PACKAGES += \
     sva_plugin \
     vendor.oplus.hardware.cwb-V2-ndk_vendor \
     vendor.oplus.hardware.cwb@1.0 \
-    vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
@@ -886,12 +886,14 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     vendor_lib_rfsa_adsp_nearby_napp_header \
     vendor_lib_rfsa_adsp_nearby_so \
+    libUahPerf_Jni \
     libdiag_system \
     libdiagatbparser_system \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
+    liboplus-uah-client_system_ext \
     libostatslog \
     libqcc \
     libqcc_file_agent_sys \
@@ -938,6 +940,7 @@ PRODUCT_PACKAGES += \
     libdolbyproxyandroid \
     libdpaservice \
     libolc_vnd \
+    liboplus-uah-client \
     liboplus_service \
     libosenseaidlhalclient \
     libosensenativeproxy_client \
@@ -945,10 +948,13 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbyencoderfilter \
     libsensorbridge \
     libstc_color_feature \
+    libuahcore \
+    liburcccore \
     vendor.oplus.hardware.cwb-V2-ndk \
     vendor.oplus.hardware.display.MixLut3D-V1-ndk \
     vendor.oplus.hardware.display.MixLut3D-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
+    vendor.oplus.hardware.urcc-V1-ndk_odm \
     com.google.android.widevine.nonupdatable \
     TimeService \
     ConsumerIRApp \
@@ -1011,6 +1017,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_touch_aidl.xml \
+    vendor.oplus.hardware.urcc-service.xml \
     vintf_manifext_aidl_panelchaplin.xml \
     C2PAInternetService \
     KmInstallKeybox \
@@ -1123,6 +1130,7 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-touch-V2-hbp5-service \
     vendor.oplus.hardware.charger-V11-service \
     vendor.oplus.hardware.displaypanelfeature-service \
+    vendor.oplus.hardware.urcc-service \
     wlschgd \
     init.oplus.wifi \
     oldc_vnd \
@@ -1517,6 +1525,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.dpmservice@1.1 \
     vendor.qti.ims.datachannelservice-V2-ndk \
     vendor.qti.ims.datachannelservice-V3-ndk \
     vendor.qti.imsrtpservice@3.0 \
@@ -1565,6 +1574,9 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    vendor.qti.hardware.dpmaidlservice-V1-java \
+    vendor.qti.hardware.dpmservice-V1.0-java \
+    vendor.qti.hardware.dpmservice-V1.1-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V2-java \
