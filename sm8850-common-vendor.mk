@@ -894,7 +894,6 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
-    liboplus-uah-client_system_ext \
     libostatslog \
     libqcc \
     libqcc_file_agent_sys \
