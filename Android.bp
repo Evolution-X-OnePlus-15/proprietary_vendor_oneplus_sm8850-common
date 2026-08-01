@@ -18459,32 +18459,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "KmInstallKeybox",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/KmInstallKeybox",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "liblog",
-                "libc",
-                "libminkdescriptor",
-                "libmodem_device_ids",
-                "libcrypto",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "adsprpcd",
     owner: "oneplus",
     target: {

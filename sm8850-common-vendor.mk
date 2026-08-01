@@ -1021,7 +1021,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.urcc-service.xml \
     vintf_manifext_aidl_panelchaplin.xml \
     C2PAInternetService \
-    KmInstallKeybox \
     adsprpcd \
     audioadsprpcd \
     cdsprpcd \
