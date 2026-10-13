@@ -608,7 +608,6 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     qti.video.utils.videobufferlayout \
     sensors.qsh \
-    libquasar \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.diaghal-V1-ndk_vendor \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
